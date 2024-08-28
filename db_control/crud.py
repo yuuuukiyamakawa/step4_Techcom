@@ -30,7 +30,6 @@ config = {
     'port': '3306',
     'connection_timeout': 10, 
 }
-print(config)
 
 
 # Home画面メンティーリスト用
