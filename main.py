@@ -4,11 +4,16 @@ from fastapi import FastAPI, Request
 from db_control import crud, GPT
 from db_control.dbmodels import MenteeMaster, UserData, Mentoring, MentorMaster, Feedback
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
 
 app = FastAPI()
 
+load_dotenv()
+FRONT_URL = os.getenv('FRONT_URL')
+
 origins = [
-    'http://localhost:3000'
+    FRONT_URL
 ]
 
 app.add_middleware(
