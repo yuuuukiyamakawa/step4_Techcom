@@ -13,7 +13,7 @@ load_dotenv()
 FRONT_URL = os.getenv('FRONT_URL')
 
 origins = [
-    FRONT_URL
+    'https://tech-compassion.vercel.app/'
 ]
 
 app.add_middleware(
