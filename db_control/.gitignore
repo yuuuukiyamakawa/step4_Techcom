@@ -9,4 +9,4 @@
 /venv
 
 # pem
-.pem
+*.pem
