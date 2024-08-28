@@ -82,16 +82,16 @@ def get_mentor_skill(mentor_id: int, FB_flg: bool):
     return result
 
 
+# 確認用
+@app.get("/mentoring_list")
+def get_mentoring_list():
+    result = crud.get_mentoring_results()
+    return result
+
+
 # 1on1履歴閲覧用API
     # @app.get("/mentor/{mentor_id}/history")
     # def read_mentoring_history(mentor_id: int,):
     #         model = 
     #     result = a
     #     return result
-
-
-# 確認用
-@app.get("/mentoring_list")
-def get_mentoring_list():
-    result = crud.get_mentoring_results()
-    return result
