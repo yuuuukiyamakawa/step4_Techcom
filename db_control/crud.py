@@ -20,7 +20,6 @@ USER = os.getenv('DB_USER')
 PASSWORD = os.getenv('PASSWORD')
 DATABASE = os.getenv('DATABASE')
 
-
 # DB接続情報
 config = {
     'host': HOST,
